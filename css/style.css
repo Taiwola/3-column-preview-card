@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+}
+
+html,
+body {
+    line-height: 1;
+    font-family: lato, ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+.Main-section {
+    display: flex;
+    width: 100vw;
+    margin: 3.125rem 1.25rem;
+    margin-top: 6.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.Main-section .Main-section-sedans-yellow {
+    background: var(--Bright-orange);
+    width: 20vw;
+    height: 30vw;
+    padding: 1.25rem 1.25rem;
+    border-bottom-left-radius: 0.3125rem;
+    border-top-left-radius: 0.3125rem;
+}
+
+.Main-section .Main-section-sedans-yellow .sedans-yellow-img {
+    padding-top: 1.25rem;
+}
+
+.Main-section .Main-section-sedans-yellow .sedans-yellow-text h1 {
+    color: var(--Very-light-gray);
+    margin-top: 1.875rem;
+}
+
+.Main-section .Main-section-sedans-yellow .sedans-yellow-text p {
+    color: var(--Transparent-white);
+    margin-top: 1.875rem;
+    line-height: 1.25rem;
+}
+
+.Main-section .Main-section-sedans-yellow .sedans-yellow-btn button {
+    margin-top: 5rem;
+    padding: 0.625rem 2.5rem;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    border-color: var(--Transparent-white);
+    color: var(--Bright-orange);
+    font-weight: 400;
+    border: 0.0625rem solid;
+}
+
+.Main-section .Main-section-sedans-yellow .sedans-yellow-btn button:hover {
+    background-color: var(--Bright-orange);
+    color: var(--Transparent-white);
+}
+
+/* dark cyan */
+
+.Main-section-suvs-cyan {
+    background: var(--Dark-cyan);
+    width: 20vw;
+    height: 30vw;
+    padding: 1.25rem 1.25rem;
+}
+
+.Main-section-suvs-cyan .suvs-cyan-img {
+    padding-top: 1.25rem;
+}
+
+.Main-section-suvs-cyan .suvs-cyan-text h1 {
+    color: var(--Very-light-gray);
+    margin-top: 1.875rem;
+}
+
+.Main-section-suvs-cyan .suvs-cyan-text p {
+    color: var(--Transparent-white);
+    margin-top: 1.875rem;
+    line-height: 1.25rem;
+}
+
+.Main-section-suvs-cyan .suvs-cyan-btn button {
+    margin-top: 5rem;
+    padding: 0.625rem 2.5rem;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    border-color: var(--Transparent-white);
+    color: var(--Dark-cyan);
+    font-weight: 400;
+    border: 1px solid;
+}
+
+.Main-section-suvs-cyan .suvs-cyan-btn button:hover {
+    background-color: var(--Dark-cyan);
+    color: var(--Transparent-white);
+}
+
+/* dark cyan */
+.Main-section-luxury-dark{
+    background: var(--Very-dark-cyan);
+    width: 20vw;
+    height: 30vw;
+    padding: 1.25rem 1.25rem;
+    border-bottom-right-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+}
+
+.Main-section-luxury-dark .luxury-dark-img img{
+    padding-top: 1.25rem;
+}
+
+.Main-section-luxury-dark .luxury-dark-text h1{
+    color: var(--Very-light-gray);
+    margin-top: 1.875rem;
+}
+
+.Main-section-luxury-dark .luxury-dark-text p{
+    color: var(--Transparent-white);
+    margin-top: 1.875rem;
+    line-height: 1.25rem;
+}
+
+.Main-section-luxury-dark .luxury-dark-btn button{
+    margin-top: 5rem;
+    padding: 0.625rem 2.5rem;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    border-color: var(--Transparent-white);
+    color: var(--Very-dark-cyan);
+    font-weight: 400;
+    border: 0.0625rem solid;
+}
+
+.Main-section-luxury-dark .luxury-dark-btn button:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Transparent-white);
+}
+
+/* media queries */
+@media screen and (max-width:1293px) {
+    .Main-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1148px){
+    .Main-section{
+        height: 100%;
+    }
+    .Main-section .Main-section-sedans-yellow{
+        height: 60vh;
+    }
+
+    .Main-section-suvs-cyan{
+        height: 60vh;
+    }
+
+    .Main-section-luxury-dark{
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width:924px){
+    .Main-section .Main-section-sedans-yellow{
+        height: 70vh;
+    }
+
+    .Main-section-suvs-cyan{
+        height: 70vh;
+    }
+
+    .Main-section-luxury-dark{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:700px){
+    .Main-section .Main-section-sedans-yellow{
+        height: 90vh;
+        width: 25vw;
+    }
+
+    .Main-section-suvs-cyan{
+        height: 90vh;
+        width: 25vw;
+    }
+
+    .Main-section-luxury-dark{
+        height: 90vh;
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .Main-section .Main-section-sedans-yellow{
+        height: 95vh;
+        width: 25vw;
+    }
+
+    .Main-section-suvs-cyan{
+        height: 95vh;
+        width: 25vw;
+    }
+
+    .Main-section-luxury-dark{
+        height: 95vh;
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:530px){
+    .Main-section .Main-section-sedans-yellow{
+        height: 120vh;
+        width: 30vw;
+    }
+
+    .Main-section-suvs-cyan{
+        height: 120vh;
+        width: 30vw;
+    }
+
+    .Main-section-luxury-dark{
+        height: 120vh;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:420px){
+    .Main-section .Main-section-sedans-yellow{
+        width: 40vw;
+    }
+
+    .Main-section-suvs-cyan{
+        
+        width: 40vw;
+    }
+
+    .Main-section-luxury-dark{
+        
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .Main-section .Main-section-sedans-yellow{
+        width: 50vw;
+    }
+
+    .Main-section-suvs-cyan{
+        
+        width: 50vw;
+    }
+
+    .Main-section-luxury-dark{
+        
+        width: 50vw;
+    }
+}
